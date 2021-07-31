@@ -11,3 +11,6 @@ repos/drupal/
 
 # Ddev-Gitpod
 .ddev/docker-compose.host-docker-internal.yaml
+
+# Docker-compose python env
+/env
