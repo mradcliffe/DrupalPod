@@ -94,4 +94,7 @@ else
 fi
 
 #Open preview browser
-gp preview "$(gp url 8080)"
+if command -v gp &> /dev/null
+then
+    gp preview "$(gp url 8080)"
+fi
