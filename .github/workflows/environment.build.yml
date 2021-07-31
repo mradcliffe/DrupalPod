@@ -9,7 +9,7 @@ jobs:
       -
         uses: actions/checkout@v2
       -
-        uses: jonasaberle/github-action-setup-ddev@v1
+        uses: jonaseberle/github-action-setup-ddev@v1
       -
         run: ddev composer run-script post-root-package-install
       -
