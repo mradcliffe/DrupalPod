@@ -15,9 +15,6 @@ jobs:
         name: Downloads ddev images
         run: .gitpod/download-ddev-images.sh
       -
-        name: Configures ddev
-        run: .gitpod/setup-ddev.sh
-      -
         name: Configures Drupal root
         run: ddev composer run-script post-root-package-install
       -
