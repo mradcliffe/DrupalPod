@@ -7,7 +7,7 @@ sudo apt-get install -y -qq build-essential procps curl file git
 
 # From drud/quicksprint.
 if [ ! -d /home/linuxbrew/.linuxbrew/bin ]; then
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh")
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
 fi
 
 echo "export PATH=/home/linuxbrew/.linuxbrew/bin:$PATH" >>~/.bashrc
