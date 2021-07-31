@@ -1,0 +1,18 @@
+name: Test VSCode Extension
+on:
+  - push
+  - pull_request
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      -
+        uses: actions/checkout@v2
+      -
+        uses: jonasaberle/github-action-setup-ddev@v1
+      -
+        run: ddev composer run-script post-root-package-install
+      -
+        run: .gitpod/drupal/ssh/01-check-private-ssh.sh
+      -
+        run: .gitpod/drupal/setup-dev-environment.sh
